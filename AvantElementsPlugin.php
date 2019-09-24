@@ -162,6 +162,9 @@ class AvantElementsPlugin extends Omeka_Plugin_AbstractPlugin
             return;
         }
 
+        // Enable translations
+        add_translation_source(dirname(__FILE__) . '/languages');
+
         // Add callbacks for every element even though some elements require no filtering or validation.
         $elements = get_db()->getTable('Element')->findAll();
 

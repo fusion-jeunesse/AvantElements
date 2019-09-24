@@ -1,0 +1,301 @@
+# Translation for the Fusion theme for Omeka.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Omeka package.
+# José-Nicolas Binette <biguenique@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka-theme-Fusion\n"
+"Report-Msgid-Bugs-To: https://fusionjeunesse.org\n"
+"POT-Creation-Date: 2019-08-06 15:30+0200\n"
+"PO-Revision-Date: 2019-09-23 20:06-0400\n"
+"Language-Team: Français <farseneau@fusionjeunesse.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+#: config_form.php:62
+msgid "The order to display elements on public Show pages."
+msgstr "L'ordre pour afficher les éléments sur les page d'affichage public."
+
+#: config_form.php:72
+msgid "Elements that should link to items with the the same value."
+msgstr ""
+"Les éléments qui devraient être liés aux contenus avec la même valeur."
+
+#: config_form.php:82
+msgid "Elements that link to external web resources."
+msgstr "Les éléments qui sont liés aux ressources web externes."
+
+#: config_form.php:95
+msgid "Hide element descriptions."
+msgstr "Cacher les descriptions d'élément."
+
+#: config_form.php:105
+msgid "Elements that must be validated."
+msgstr "Les éléments doivent être validés."
+
+#: config_form.php:115
+msgid "Elements that show the Add Input button."
+msgstr "Les éléments qui affichent le bouton Ajouter une entrée (Add Input)."
+
+#: config_form.php:125
+msgid "Elements that show the Use HTML checkbox."
+msgstr ""
+"Les éléments qui affichent la case à cocher Utiliser le HTML (Use HTML)."
+
+#: config_form.php:135
+msgid "Elements that should display as a text field."
+msgstr "Les éléments qui devraient apparaître en tant que champ de texte."
+
+#: config_form.php:146
+msgid "SimpleVocab elements that display as a dropdown list."
+msgstr ""
+"Les éléments Vocabulaire Simple qui s'affichent comme une liste déroulante."
+
+#: config_form.php:159
+msgid "Elements that should display as a checkbox."
+msgstr "Les éléments qui devraient s'afficher comme une case à cocher."
+
+#: config_form.php:169
+msgid "Elements that should display as read-only."
+msgstr "Les éléments qui devraient s'afficher en lecture seule."
+
+#: config_form.php:179
+msgid "Default values to use when adding a new Item."
+msgstr ""
+"Les valeurs par défaut à utiliser lorsqu'un nouveau contenu est ajouté."
+
+#: config_form.php:189
+msgid "Elements that should offer input suggestions."
+msgstr "Les éléments qui devraient offrir des suggestions d'entrée."
+
+#: config_form.php:199
+msgid "Elements that should stay in sync with corrresponding titles."
+msgstr ""
+"Les éléments qui devraient rester synchronisés avec les titres "
+"correspondants."
+
+#: config_form.php:209
+msgid "Callback functions to be called for individual elements."
+msgstr "Les fonctions de rappel à appeler pour les éléments individuels."
+
+#: models\CustomCallback.php:31
+#, php-format
+msgid "Callback %s function '%s' is not callable."
+msgstr "Callback %s function '%s' is not callable."
+
+#: models\DateValidator.php:108
+msgid ""
+"When Date is empty, Year Start and Year End must each be set to a different "
+"year"
+msgstr ""
+"Lorsque Date est vide, Année de début et Année de fin doivent être assignés "
+"à des années différentes"
+
+#: models\DateValidator.php:113
+msgid "Year Start must be less than Year End"
+msgstr "L'année de début doit être avant l'année de fin"
+
+#: models\DateValidator.php:132
+msgid "Add Item"
+msgstr "Ajouter un contenu"
+
+#: models\DateValidator.php:132
+msgid "Save Changes"
+msgstr "Sauvegarder les changements"
+
+#: models\DateValidator.php:137
+msgid ""
+"When Date is set, Year Start and Year End must be set to the same year as "
+"Date"
+msgstr ""
+"Lorsqu'une date est spécifiée, l'année de début et l'année de fin doivent "
+"correspondre à l'année spécifiée dans la date"
+
+#: models\DateValidator.php:152
+msgid "Value must be in the form YYYY-MM-DD or YYYY-MM or YYYY."
+msgstr "La valeur doit prendre la forme AAAA-MM-JJ ou AAAA-MM ou AAAA."
+
+#: models\DateValidator.php:159
+msgid ""
+"Value must be a year consisting of exactly four digits with no leading or "
+"trailing spaces."
+msgstr ""
+"La valeur doit être une année composée de quatre chiffres, sans espace "
+"avant ou après."
+
+#: models\ElementCloning.php:46
+#, php-format
+msgid ""
+"--- DUPLICATE ---\n"
+"%s"
+msgstr ""
+"--- COPIER ---\n"
+"%s"
+
+#: models\ElementCloning.php:71
+msgid "Duplicate This Item"
+msgstr "Copier ce contenu"
+
+#: models\ElementFields.php:106
+msgid "Select Below"
+msgstr "Choisir ci-dessous"
+
+#: models\ElementSuggest.php:93
+msgid "[ Type more letters to refine your search ]"
+msgstr "[ Ajouter des lettres pour affiner votre recherche ]"
+
+#: models\ElementValidator.php:81
+msgid "A value is required."
+msgstr "Une valeur est requise."
+
+#: models\ElementsConfig.php:3
+msgid "Allow Add Input"
+msgstr "Permettre l'ajout d'entrée (Add Input)"
+
+#: models\ElementsConfig.php:4
+msgid "Custom Callback"
+msgstr "Rappel personnalisé"
+
+#: models\ElementsConfig.php:5
+msgid "Checkbox Field"
+msgstr "Champ case à cocher"
+
+#: models\ElementsConfig.php:6
+msgid "Default Value"
+msgstr "Valeur par défaut"
+
+#: models\ElementsConfig.php:7
+msgid "Display Order"
+msgstr "Ordre d'apparition"
+
+#: models\ElementsConfig.php:8
+msgid "External Link"
+msgstr "Lien externe"
+
+#: models\ElementsConfig.php:9
+msgid "Hide Descriptions"
+msgstr "Cacher les descriptions"
+
+#: models\ElementsConfig.php:10
+msgid "Allow HTML"
+msgstr "Permettre le HTML"
+
+#: models\ElementsConfig.php:11
+msgid "Implicit Link"
+msgstr "Lien implicite"
+
+#: models\ElementsConfig.php:12
+msgid "Read-only Field"
+msgstr "Champ lecture seule"
+
+#: models\ElementsConfig.php:13
+msgid "SimpleVocab Field"
+msgstr "Champ Vocabulaire Simple"
+
+#: models\ElementsConfig.php:14
+msgid "Suggest"
+msgstr "Suggérer"
+
+#: models\ElementsConfig.php:15
+msgid "Text Field"
+msgstr "Champ texte"
+
+#: models\ElementsConfig.php:16
+msgid "Title Sync"
+msgstr "Synchronisation des titres"
+
+#: models\ElementsConfig.php:17
+msgid "Validation"
+msgstr "Validation"
+
+#: models\ElementsConfig.php:436
+#, php-format
+msgid "Missing callback type. Options: %s."
+msgstr "Type de rappel manquant. Options : %s."
+
+#: models\ElementsConfig.php:437
+#, php-format
+msgid "Invalid callback type '%s'. Options: %s."
+msgstr "Type de rappel invalide '%s'. Options: %s."
+
+#: models\ElementsConfig.php:438 models\ElementsConfig.php:446
+msgid "No callback function specified."
+msgstr "Aucune fonction de rappel n'est spécifiée."
+
+#: models\ElementsConfig.php:443
+msgid "No callback class specified."
+msgstr "Aucune classe de rappel n'est spécifiée."
+
+#: models\ElementsConfig.php:449
+#, php-format
+msgid "%s function '%s' does not exist or is not public."
+msgstr "%s function '%s' does not exist or is not public."
+
+#: models\ElementsConfig.php:455
+#, php-format
+msgid ""
+"A custom filter for %s cannot be used because %s is specified in the "
+"Implicit Link option. "
+msgstr ""
+"Un filtre personnalisé %s ne peut être utilisé puisque %s est spécifié dans "
+"l'option Lien implicite. "
+
+#: models\ElementsConfig.php:456
+msgid ""
+"See the Implicit Link option documentation to learn how to resolve this "
+"conflict."
+msgstr ""
+"Consultez la documentation sur l'option Lien implicite pour savoir comment "
+"résoudre ce conflit."
+
+#: models\ElementsConfig.php:459
+#, php-format
+msgid ""
+"A custom filter for %s cannot be used because %s is specified in the "
+"External Link option."
+msgstr ""
+"Un filtre personnalisé %s ne peut être utilisé puisque %s est spécifié dans "
+"l'option Lien externe."
+
+#: models\ElementsConfig.php:486
+msgid "Missing text to display when checked"
+msgstr "Texte manquant à afficher lorsque coché"
+
+#: models\ElementsConfig.php:509
+msgid "No value specified."
+msgstr "Aucune valeur spécifiée."
+
+#: models\ElementsConfig.php:546
+#, php-format
+msgid "'%s' is not valid for the Open action. Options: true, false."
+msgstr "'%s' n'est pas valide pour l'action Ouvrir. Options : vrai, faux."
+
+#: models\ElementsConfig.php:588 models\ElementsConfig.php:627
+#, php-format
+msgid "Width '%s' is invalid. Specify an integer greater than 20."
+msgstr ""
+"La largeur '%s' n'est pas valide. Choisir un entier plus grand que 20."
+
+#: models\ElementsConfig.php:597
+#, php-format
+msgid "'%s' is not a SimpleVocab element."
+msgstr "'%s' n'est pas un élément Vocabulaire Simple."
+
+#: models\ElementsConfig.php:666
+msgid "At least one validation parameter is required."
+msgstr "Au moins un paramètre de validation est requis."
+
+#: models\ElementsConfig.php:687
+#, php-format
+msgid "'%s' is not a valid parameter. Options: %s."
+msgstr "'%s' n'est pas un paramètre valide. Options : %s."
+
+#: models\LinkBuilder.php:64
+msgid "See other items that have this value"
+msgstr "Voir les autres contenus qui ont cette valeur"
