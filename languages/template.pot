@@ -107,6 +107,11 @@ msgstr ""
 msgid "Select Below"
 msgstr ""
 
+#: models\ElementSuggest.php:83
+#, php-format
+msgid "No suggestions for '%s'"
+msgstr ""
+
 #: models\ElementSuggest.php:93
 msgid "[ Type more letters to refine your search ]"
 msgstr ""
