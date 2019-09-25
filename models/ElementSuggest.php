@@ -80,7 +80,7 @@ class ElementSuggest
 
         if (empty($suggestions))
         {
-            $suggestions = array("No suggestions for '$term'");
+            $suggestions = array(sprintf(__("No suggestions for '%s'"),$term));
         }
 
         return json_encode($suggestions);
@@ -116,11 +116,12 @@ class ElementSuggest
         $keywords = $this->getKeywords($term);
         foreach ($vocabulary as $entry)
         {
-            $entry = strtolower($entry);
+            ## JNB 20190925 Why strtolower?
+            #$entry = strtolower($entry);
             $found = true;
             foreach ($keywords as $word)
             {
-                if (strpos($entry, $word) === false)
+                if (strpos(strtolower($entry), $word) === false)
                 {
                     $found = false;
                     break;
