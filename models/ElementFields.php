@@ -103,7 +103,20 @@ class ElementFields
         }
         $style = $width == 0 ? '' : "width:{$width}px";
         $class = $width == 0 ? 'input-field-full-width' : '';
-        $selectTerms = array('' => __('Select Below')) + array_combine($vocabulary, $vocabulary);
+        $selectTerms = array('' => __('Select Below')); // + array_combine($vocabulary, $vocabulary);
+        // Split options into optgroups
+        $optgroup = null;
+        foreach($vocabulary as $term) {
+            if(defined('SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP')
+            and preg_match(SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP,$term,$match)) {
+                $optgroup = $match[1];
+                $selectTerms[$optgroup] = array();
+            } elseif(!is_null($optgroup)) {
+                $selectTerms[$optgroup][$term] = $term;
+            } else {
+                $selectTerms[$term] = $term;
+            }
+        }
         return get_view()->formSelect($inputName, $value, array('class' => $class, 'style' => $style), $selectTerms);
     }
 
