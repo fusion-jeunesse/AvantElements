@@ -107,6 +107,9 @@ class ElementFields
         // Split options into optgroups
         $optgroup = null;
         foreach($vocabulary as $term) {
+            if(defined('SimpleVocab_Controller_Plugin_SelectFilter::MATCH_DISABLED')
+            and preg_match(SimpleVocab_Controller_Plugin_SelectFilter::MATCH_DISABLED,$term,$match))
+              $term = "DISABLED:$match[1]";
             if(defined('SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP')
             and preg_match(SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP,$term,$match)) {
                 $optgroup = $match[1];
@@ -117,7 +120,11 @@ class ElementFields
                 $selectTerms[$term] = $term;
             }
         }
-        return get_view()->formSelect($inputName, $value, array('class' => $class, 'style' => $style), $selectTerms);
+        return str_replace(
+          ['value="DISABLED:','>DISABLED:'],
+          ['disabled value="','>'],
+          get_view()->formSelect($inputName, $value, array('class' => $class, 'style' => $style), $selectTerms)
+        );
     }
 
     protected function createTextArea($value, $inputName)

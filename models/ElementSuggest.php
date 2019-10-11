@@ -98,10 +98,14 @@ class ElementSuggest
     public function suggestElementValues($elementId, $term)
     {
         $vocabulary = AvantElements::getSimpleVocabTerms($elementId);
-        // Filter out group labels
+        // Filter out group labels and disabled options
         if(defined('SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP'))
             foreach($vocabulary as $i => $vocab)
                 if(preg_match(SimpleVocab_Controller_Plugin_SelectFilter::MATCH_OPTGROUP, $vocab))
+                    unset($vocabulary[$i]);
+        if(defined('SimpleVocab_Controller_Plugin_SelectFilter::MATCH_DISABLED'))
+            foreach($vocabulary as $i => $vocab)
+                if(preg_match(SimpleVocab_Controller_Plugin_SelectFilter::MATCH_DISABLED, $vocab))
                     unset($vocabulary[$i]);
 
         if (!empty($vocabulary))
